@@ -55,14 +55,12 @@ export default class Welcome extends Component {
                                     <h1>ทัวร์แนะนำ</h1>
                                 </div>
 
-                                <div className="row">
+                                <div className="ui-list columns-5">
                                 {this.state.items.map(value=>{
                                     return(
-                                        <div className="items col col-md-2">
-                                            <div className="MediaThumbnail PostThumbnail">
-                                                <Link className="postImage pic" to={value.link}><img src={value.image_url} alt={value.caption} /></Link>
-                                            </div>
-                                        </div>
+                                        <div className="item"><div className="inner">
+                                            <Link className="postImage" to={value.link}><img src={value.image_url} alt={value.caption} /></Link>
+                                        </div></div>
                                     )
                                 })}
                                     
