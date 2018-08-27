@@ -237,3 +237,19 @@ h1{font-size: 24px}
 .secondary-content{
     width: 280px;
 }
+
+
+.module .items {
+    margin-bottom: 20px;
+}
+
+.postImage {
+    position: relative;
+    display: block;
+}
+.postImage::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+}
