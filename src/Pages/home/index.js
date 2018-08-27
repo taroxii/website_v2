@@ -34,11 +34,11 @@ export default class Home extends Component {
         return (
             
             <div>
-                <nav  id="pageSubmenu">
+                <nav id="pageSubmenu">
                     <div className="container"><ul className="row justify-content-md-center">
-                    {this.state.submenu.map(value=>{
+                    {this.state.submenu.map((value,index)=>{
                         return(
-                        <li key={value.name} className="col-md-auto"><Link className="link" to={value.link}>{value.name}</Link></li>
+                        <li key={index} className="col-md-auto"><Link className="link" to={value.link}>{value.name}</Link></li>
                         )
                     })}
                     </ul></div>

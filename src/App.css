@@ -7,7 +7,7 @@
 /* root #9bc5c1 */
 /**/
 :root {
-	--page-background: #e9eaed;
+	--page-background: #fff;
 	--page-color: #000;
 
 	--pageAlert-background: #F44336;
@@ -22,8 +22,9 @@
 	--submenu-background: #11ab9c;
 	--submenu-link-color: #fff;
 
-
-	--footer-background: #e7e7e7;
+    --footer-background: #f2f2f2;
+    
+    --input-border-focus-color: #11ab9c;
 }
 
 
@@ -84,7 +85,7 @@ h1{font-size: 24px}
 }
 
 .input-field input[required]~label:after {
-    color: #e15a41;
+    color: var(--input-border,#e15a41);
     content: "*";
     margin-left: 1px;
 }
@@ -129,10 +130,10 @@ h1{font-size: 24px}
 	border-color: #b9b9b9
 }
 .input-field input:focus{
-	border-color: #6738ed;
+	border-color: var(--input-border-focus-color,#6738ed);
 }
 .input-field input:focus~label{
-	color:#6738ed;
+	color:var(--input-border-focus-color,#6738ed);
 }
 
 #header{
@@ -166,15 +167,16 @@ h1{font-size: 24px}
 #pageLogo {
     height: 65px;
     position: relative;
-    width: 120px;
+    /* width: 120px; */
     /*background-image: url('./dist/images/tourdd.f313fe7f.jpg');
     background-repeat: no-repeat;
     background-size: cover;*/
     flex: none;
+    padding: 10px 0;
     /*margin-right: 50px*/
 }
 #pageLogo img{
-    max-width: 100%;
+    max-height: 100%;
 }
 
 #pageNav .link{
@@ -225,12 +227,15 @@ h1{font-size: 24px}
 /* page title */
 /**/
 .page-title {
-	margin-bottom: 18px;
-	padding-top: 1px;
-	border-bottom: 1px dashed #bfbfbf;	
-	font-size: 36px;
-	line-height: 70px;
-	font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 30px
+}
+.page-title .title{
+    display:inline-block
+}
+.page-title .link-more{
+    display:inline-block;
+    margin-left: 10px;
 }
 
 /*  */
@@ -250,6 +255,7 @@ h1{font-size: 24px}
     height: 0;
     width: 100%;
     padding-bottom: 100%;
+    overflow: hidden;
 }
 .postImage img{
     
@@ -268,12 +274,38 @@ h1{font-size: 24px}
 .ui-list>.item{
     display: inline-block;
 }
-.ui-list.columns-5{
+.ui-list.columns-3, .ui-list.columns-5{
     margin: -10px;
+}
+.ui-list.columns-3>.item{
+    width: 33.3333336%
 }
 .ui-list.columns-5>.item{
     width: 20%
 }
 .ui-list .item .inner{
     padding: 10px;
+}
+
+.ui-list.style-blog .postImage{
+    padding-bottom: 56.25%;
+}
+
+/* body.desktop {
+    background-image: url(//s.isanook.com/jo/0/mu/tt/bg.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: 20px 100%;
+} */
+
+.footer-logo img{
+    max-width: 100%;
+}
+
+.textreplacement{
+    display: none;
+}
+
+#pageToolbar{
+    padding: 4px 0
 }

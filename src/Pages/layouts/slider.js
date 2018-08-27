@@ -8,13 +8,11 @@ import {
     CarouselCaption
   } from 'reactstrap';
 
-
-
 const items = [
     {
       src: 'https://d4ulp9jtgcw4i.cloudfront.net/uploads/banner/image/37/Banner-home04-min.jpg',
-      // altText: 'Slide 1',
-      // caption: 'Slide 1'
+      altText: 'Slide 1',
+      caption: 'Slide 1'
     },
     {
       src: 'https://d4ulp9jtgcw4i.cloudfront.net/uploads/banner/image/49/CS6-20180726_TK_Aw_Edit_-landing_page.jpg',
