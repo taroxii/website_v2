@@ -76,7 +76,7 @@ class App extends Component {
           <div id="pageAlert">
             <div className="container">
               {this.state.title}
-              <input type="text" onChange={this.handleChange} />
+              {/* <input type="text" onChange={this.handleChange} /> */}
             </div>
           </div>
 
@@ -87,18 +87,18 @@ class App extends Component {
                   <div id="help"><div className="title">Help</div></div>
                 </div>
                 
-                <div className="col">
+                <div className="col-md-auto">
 
                   <div className="row">
-                    <div id="help" className="col">
+                    <div id="help" className="col-md-auto">
                       <div className="title">Sign in / Register</div>
                     </div>
 
-                    <div id="help" className="col">
+                    <div id="help" className="col-md-auto">
                       <div className="title">Wish list: 2 items</div>
                     </div>
 
-                    <div id="help" className="col">
+                    <div id="help" className="col-md-auto">
                       <div className="title">Cart: 3 items</div>
                     </div>
                   </div>

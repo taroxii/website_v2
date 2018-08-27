@@ -10,7 +10,7 @@
 	--page-background: #fff;
 	--page-color: #000;
 
-	--pageAlert-background: #F44336;
+	--pageAlert-background: #000;
 	--pageAlert-color: #fff;
 
 	--header-background: #fff;
@@ -153,8 +153,11 @@ h1{font-size: 24px}
 
 #pageAlert{
 	background-color:var(--pageAlert-background);
-	color:var(--pageAlert-color);
-	display: none;
+    color:var(--pageAlert-color);
+    
+    text-align: center;
+    padding: 12px
+	
 }
 #header{
 	background-color: var(--header-background);
