@@ -81,7 +81,7 @@ export default class Slider extends Component {
     });
 
     return (
-      <div className="module carousel-outer"><div  className="container"><Carousel
+      <div id="home-hero" className="module module-inner carousel-outer"><div className="container"><Carousel
         activeIndex={activeIndex}
         next={this.next}
         previous={this.previous}
