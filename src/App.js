@@ -24,6 +24,9 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
 
     this.state = {
+      site: {
+        name: 'TourDD',
+      },
       title: 'Hello World',
       menu: [
           {key: 'home',         name: 'หน้าแรก',             link: '/'}
@@ -75,8 +78,12 @@ class App extends Component {
           {/* site Alert */}
           <div id="pageAlert">
             <div className="container">
-              {this.state.title}
-              {/* <input type="text" onChange={this.handleChange} /> */}
+              <div className="msgblock">We use cookies to make sure you get the best experience on our website. If you continue without changing your settings, you're agreeing to receive all cookies on the {this.state.site.name} website.</div>
+              <div className="linkBlock">
+                <a href="/ms/en_TH/privacy_policy/privacy_policy.html">Privacy policy</a> <span class="pipeSeparator">|</span>
+                <a href="/ms/en_TH/privacy_policy/cookie_policy.html">Read more about cookies</a>
+              </div>
+              
             </div>
           </div>
 

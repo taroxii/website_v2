@@ -11,7 +11,10 @@
 	--page-color: #000;
 
 	--pageAlert-background: #000;
-	--pageAlert-color: #fff;
+    --pageAlert-color: #fff;
+    --pageAlert-link-color: #fff;
+    --pageAlert-link-hover-color: #fff;
+	--pageAlert-link-active-color: #fff;
 
 	--header-background: #fff;
 	--menu-link-color: #444;
@@ -156,9 +159,19 @@ h1{font-size: 24px}
     color:var(--pageAlert-color);
     
     text-align: center;
-    padding: 12px
-	
+    padding: 12px	
 }
+#pageAlert a{
+    color:var(--pageAlert-link-color);
+}
+#pageAlert a:hover{
+    color:var(--pageAlert-link-hover-color, --pageAlert-link-color);
+}
+#pageAlert a:active{
+    color:var(--pageAlert-link-active-color, --pageAlert-link-color);
+}
+
+
 #header{
 	background-color: var(--header-background);
 	color: var(--header-color);
