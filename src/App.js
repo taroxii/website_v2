@@ -25,6 +25,7 @@ class App extends Component {
     this.state = {
       site: {
         name: 'TourDD',
+        copyright: 'Copyright © 2011 - 2018 BKK Software. All Rights Reserved'
       },
       menu: [
         { key: 'home', name: 'หน้าแรก', link: '/' }
@@ -78,14 +79,15 @@ class App extends Component {
             <div className="container">
               <div className="msgblock">We use cookies to make sure you get the best experience on our website. If you continue without changing your settings, you're agreeing to receive all cookies on the {this.state.site.name} website.</div>
               <div className="linkBlock">
-                <a href="/ms/en_TH/privacy_policy/privacy_policy.html">Privacy policy</a> <span class="pipeSeparator">|</span>
+                <a href="/ms/en_TH/privacy_policy/privacy_policy.html">Privacy policy</a>
+                <span className="pipeSeparator"> | </span>
                 <a href="/ms/en_TH/privacy_policy/cookie_policy.html">Read more about cookies</a>
               </div>
 
             </div>
           </div>
 
-          <div id="pageToolbar">
+          <div id="site-toolbar">
             <div className="container">
               <div className="row">
                 <div className="col">
