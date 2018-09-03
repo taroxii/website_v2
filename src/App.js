@@ -26,8 +26,10 @@ class App extends Component {
     this.state = {
       site: {
         name: 'TourDD',
-        copyright: 'Copyright © 2011 - 2018 BKK Software. All Rights Reserved'
+        copyright: 'Copyright © 2011 - 2018 BKK Software. All Rights Reserved',
       },
+      alert: '',
+
       title: 'Hello World',
       menu: [
           {key: 'home',         name: 'หน้าแรก',             link: '/'}
@@ -77,17 +79,7 @@ class App extends Component {
         <div className="layout">
 
           {/* site Alert */}
-          <div id="pageAlert">
-            <div className="container">
-              <div className="msgblock">We use cookies to make sure you get the best experience on our website. If you continue without changing your settings, you're agreeing to receive all cookies on the {this.state.site.name} website.</div>
-              <div className="linkBlock">
-                <a href="/ms/en_TH/privacy_policy/privacy_policy.html">Privacy policy</a>
-                <span className="pipeSeparator"> | </span>
-                <a href="/ms/en_TH/privacy_policy/cookie_policy.html">Read more about cookies</a>
-              </div>
-              
-            </div>
-          </div>
+          <div id="pageAlert"><div className="container"><div className="msgblock">คุกกี้คือไฟล์ที่สร้างขึ้นโดยเว็บไซต์ที่คุณเคยเข้าชม เพื่ออำนวยความสะดวกในการใช้งาน หากคุณไม่เปลี่ยนการตั้งค่าคุกกี้ (setting) เว็บไซต์จะบันทึกว่าคุณอนุญาตให้เราเก็บข้อมูลการใช้งานบน</div><div className="linkBlock"><a href="/ms/en_TH/privacy_policy/privacy_policy.html">Privacy policy</a><span className="pipeSeparator"> | </span><a href="/ms/en_TH/privacy_policy/cookie_policy.html">Read more about cookies</a></div></div></div>
 
           <div id="site-toolbar">
             <div className="container">
