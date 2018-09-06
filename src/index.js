@@ -14,7 +14,9 @@ import registerServiceWorker from './registerServiceWorker';
 //      document.getElementById('doc'));
 
 ReactDOM.render(
-    (<App/>),
+(  <Router>
+    <App/> 
+    </Router>),
     document.getElementById('doc')
 )
 registerServiceWorker();

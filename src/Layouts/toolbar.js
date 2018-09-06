@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 const Toolbar = (props) => {
     return (
         <div id="site-toolbar">

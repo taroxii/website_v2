@@ -3,7 +3,7 @@ import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
-import Home from "./Pages/home";
+import Home from "./Views/Pages/home";
 //import Tour from "./Components/tour";
 import Packages from "./Components/packages";
 
@@ -44,16 +44,14 @@ class App extends Component {
           {this.state.alert && <_Alert/>}
           <Toolbar/>
           {/* header */}
-          <Header />
+          <Header pageLogo={pageLogo} />
           
           {/* main */}
           <main id="main">
-          <Router>
             <Switch>
               <Route exact path="/" name="home" component={Home} />
               <Route path="/packages" name="packages" component={Packages} />
             </Switch>
-          </Router>
           </main>
       
         </div>

@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 const _Alert = (props)=>{
     return (
         <div id="pageAlert">
@@ -13,4 +15,4 @@ const _Alert = (props)=>{
             </div>
     )
 }
-export default _Alert 
+export default _Alert ;
