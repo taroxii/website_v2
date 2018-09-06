@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
+import {Router, Link } from 'react-router-dom'
+const data = require('../lib/data/menu');
 
-export default class Header extends Component{
+//hoc component
+const Header = (props) => {
+    return (
+        <header id="header" className="">
+            <div className="container"><div className="row">
+                <div className="col-md-auto"><h1 id="pageLogo" className="logo"><img src={props.pageLogo} /></h1></div>
 
-    render (){
-        return
-    <div>
+                <nav className="col-md-auto" id="pageNav">
+                    <ul className="row nav">
+                   
+                        {data.map(e => {
+                            return <li key={e.name} className="col"><Link className="link" to={e.link}>{e.name}</Link></li>
+                        })}
+                     
+                    </ul>
+                </nav>
+                <div id="pageSearch" className="col">
+                    <form>
+                        <div className="input-field">
+                            <input type="text" id="search-input" autoComplete="off" />
+                            <label htmlFor="search-input">ค้นหาทัวร์</label>
+                        </div>
 
-        // banner
-      <div key="0" id="banner">
-        {this.state.name}
-        <input type="text" onChange={this.handleChange} />
-        </div>
-    
-        // topbar
-        <header className="MainHeader clearfix">
-        <div id="header" className="container">
-            <h1 className="MainLogo"></h1>
-            <nav className="MainNav">{this.state.menu.map(val=>{return <a href={val.link} key={val.key}>{val.name}</a>})}</nav>
-        </div>
+                    </form>
+                </div>
+            </div></div>
         </header>
-
-    </div>
-    
-    } 
+    )
 }
+export default Header;
