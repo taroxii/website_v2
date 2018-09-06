@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
-<<<<<<< HEAD
-import Home from "./Pages/home";
-=======
 
 import Home from "./Views/Pages/home";
->>>>>>> 06e2705275d6c076eed8095610bb73ab0855baa2
 //import Tour from "./Components/tour";
 import Packages from "./Components/packages";
 
