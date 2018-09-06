@@ -15,4 +15,4 @@ const _Alert = (props)=>{
             </div>
     )
 }
-export default _Alert ;
+export default _Alert;

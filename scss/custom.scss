@@ -61,8 +61,8 @@ table{border-spacing:0;border-collapse:collapse}
 
 
 body{
-  background-color: var(--page-background);
-  color: var(--page-color);
+  background-color: var(--page-background, #ffffff);
+  color: var(--page-color, #000);
   font-size: 13px;
   font-family: "Segoe UI", Arial, sans-serif;
   overflow-y: scroll;
